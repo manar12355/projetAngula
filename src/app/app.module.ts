@@ -8,16 +8,19 @@ import { UserModule } from './user/user.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from './core/core.module';
 import { RouterModule } from '@angular/router';
+import { LoginModule } from './login/login.module';
 @NgModule({
   declarations: [AppComponent, ListUserComponent],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     ClarityModule,
     UserModule,
     HttpClientModule,
-    CoreModule,RouterModule
+    CoreModule,RouterModule,LoginModule
   ],
+
   providers: [],
   bootstrap: [AppComponent],
 })
